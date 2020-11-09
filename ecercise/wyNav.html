@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <style>
+        a{
+            text-decoration: none;
+
+        }
+        /* 导航整体 */
+        .right-nav {
+            width: 300px;
+            margin: 50px auto;
+        }
+        /* 标题样式 */
+        .title-sol-fly {
+            width: 100%;
+            border-top: 1px solid rgb(136, 132, 130);
+            height: 41px;
+        }
+        /* 标题内部样式 */
+        .tittle {
+            /* 为了边框与文字高度一致 */
+            display: inline-block;
+            border-top: 1px solid red;
+            font-size: 16px;
+            /* 使得tittle边框与title-sol-fly边框重叠 */
+            margin-top: -1px;
+            /* 设置标题与上边框距离 */
+            padding-top: 10px;
+        }
+        /* 标题里的链接样式 */
+        .tittle a{
+            margin-top: 20px;
+            color: black;
+            font-weight: bold;
+
+        }
+        /* 图片样式 */
+        .img-title {
+            font-size: 16px;
+            margin: -30px 20px 20px 20px;
+            color: white;
+            background-image: url(../ecercise/img/sprite_icon0813_v1.png);
+        }
+        
+        
+        /* 列表样式 */
+        .news-list li {
+  
+            /* 以此设置列表square颜色 */
+            /* color: rgb(139, 136, 133); */
+            margin: 10px 5px;
+            /* list-style-type:square; */
+            
+
+        }
+        /* 为每一个li添加项目符号 */
+        .news-list li::before{
+            content: "■    ";
+            font-size: 13px;
+            margin-left: -6px;
+            color: rgb(139,136,133);
+            /* 项目符号与文字对齐 */
+           vertical-align:2px;
+        }
+        /* 列表链接样式 */
+        .news-list a {
+            font-size: 14px;
+            /* 字体颜色 */
+            color: #404040;
+            
+        }
+        .news-list a:hover{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="right-nav">
+        <div class="title-sol-fly">
+            <div class="tittle">
+                <a href="#">军事</a>
+                <span>·</span>
+                <a href="#">航空</a>
+            </div>
+            
+        </div>
+        <a href="#">
+            <img src="../ecercise/img/solider.jpg">
+            <h3 class="img-title">中印举行第八轮军长级会谈</h3>
+
+        </a>
+        <div class="news-list">
+            <ul>
+                <li><a href="#">伊朗导弹惊现 “交付阿联酋”字样</a></li>
+                <li><a href="#">海军战队喜提新车 美军接受新型ACV两栖车</a></li>
+                <li><a href="#">逼停航班！机舱内现老鼠还跑了 乘客被迫下机</a></li>
+                <li><a href="#">主流舱司机场数据揭秘：前三季亏损超400亿</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+
+</html>
